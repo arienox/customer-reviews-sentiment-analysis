@@ -1,5 +1,5 @@
 # Sentiment Analysis of Customer Reviews
-This code is a demonstration of how to perform sentiment analysis on customer review data using the Natural Language Tool Kit (nltk) library.
+This code is used to perform sentiment analysis on a dataset of customer reviews. It uses the SentimentIntensityAnalyzer function from the nltk library to analyze the sentiment of the text in the text column of the df dataframe. The function returns a dictionary of scores for different sentiments (positive, negative, neutral), with the compound score representing the overall sentiment of the text. The compound_score column is created by extracting the compound score from the dictionary, and the positive_negative column is created by applying a lambda function to the compound_score column that assigns the value "Positive" if the compound score is greater than 0 and "Negative" otherwise. The number of positive and negative reviews is then counted using the value_counts function. Finally, a new dataframe positive_data is created by filtering the original dataframe to only include rows with the value "Positive" in the positive_negative column.
 
 ## Getting Started
 These instructions will guide you through the process of running this code on your local machine.
